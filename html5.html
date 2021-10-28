@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystylesheet.css">
+    <title>HTML5</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html5.html">HTML5</a></li>
+                <li><a href="css3.html">CSS3</a></li>
+            </ul>
+        </nav>
+        <h1 class="titulo titulo-grande">Lucas Delgado</h1>
+    </header>
+        <section class="conteudo container">
+            <h2 class="titulo-conteudo">HTML5</h2>
+            <img class="imagem-logo" alt="HTML5" title="HTML5" src="./imagens/html5.png">
+            <p class="texto-conteudo">
+                HTML é uma abreviação para <i>Hypertext Markup Language</i>. Uma <i>Markup Language</i> ou
+                uma linguagem de marcação, não é uma linguagem de programação. É um tipo de linguagem que
+                usa tags especiais para anotação e marcação de documentos. A primeira versão do html foi 
+                criada em 1993, e com o passar dos anos veio sofrendo atualizações, sua versão atual é o
+                html 5.
+            </p>
+        </section>
+        <section class="conteudo container">
+            <p class="texto-conteudo">
+                Todo documento html deve começar com a tag &lt;!DOCTYPE html &gt;, para que o browser saiba que
+                aquele é um documento html 5. Logo em seguida você deve usar a tag &lt;head&gt; &lt;/head&gt;,
+                dentro dela você pode usar as tags: <br>
+                &lt;title&gt; &lt;/title&gt; Para determinar o título da pagina. <br>
+                &lt;meta&gt; para determinar a codificação dos caracteres da página. <br>
+                &lt;link&gt; para linkar <i>style sheets</i> ou scrpits externos. <br>
+            </p>
+            <p class="texto-conteudo">
+                Feito isso você dever usar a tag &lt;body&gt; &lt;/body&gt;. Dentro dessa tag vai o conteúdo
+                da sua página, e você deve fazer uso de todas as tags disponíveis para estilizar a sua pagina,
+                e incluir o conteúdo que deseja. Abaixo estão exemplificados algumas das tags que podem ser utilizadas
+                em um documento html:<br>
+                <br>
+                As tags de cabeçalho (h1 a h6) são utilizadas para destacar um texto, muitas vezes usadas como
+                titulo de uma seção. <br>
+                <div class="destaque">
+                &lt;h1&gt; &lt;/h1&gt; <h1>Esse é um header h1</h1>
+                &lt;h2&gt; &lt;/h2&gt; <h2>Esse é um header h2</h2>
+                &lt;h3&gt; &lt;/h3&gt; <h3>Esse é um header h3</h3>
+                &lt;h4&gt; &lt;/h4&gt; <h4>Esse é um header h4</h4>
+                &lt;h5&gt; &lt;/h5&gt; <h5>Esse é um header h5</h5>
+                &lt;h6&gt; &lt;/h6&gt; <h6>Esse é um header h6</h6>
+                </div>
+
+                Você deve usar as tags &lt;p&gt;&lt;/p&gt; para delimitar parágrafos. Além de texto, você também pode
+                inserir outros elementos dentro dessa tag como imagens, links e etc.<br>
+                As tags b, u e i são usadas para deixar texto em negrito, italico e colocar underline respectivamente.
+                <br>
+                <div class="destaque">
+                &lt;b&gt;&lt;/b&gt; <b>Texto em negrito.</b>
+                <br>
+                &lt;i&gt;&lt;/i&gt; <i>Texto em italico.</i>
+                <br>
+                &lt;u&gt;&lt;/u&gt; <u>Texto com underline.</u>
+                <br>
+                </div>
+                As tags img e a são usadas para colocar imagens e links no seu documento html. Na tag img 
+                você deve usar o atributo src para inserir o endereço da imagem, e as tag alt e title para
+                inserir um texto alternativo que aparece ao colocarmos o cursor em cima da imagem. Na tag
+                a você deve usar o atributo href para inserir o endereço do link, e pode usar o atributo
+                target com o valor "_blank" para que o link seja aberto em uma nova aba.<br>
+                <div class="destaque">
+                &lt;img&gt; <img class="img-exemplo" src="./imagens/code-notebook.png" alt="imagem de exmplo" title="imagem de exemplo">
+                <br>
+                &lt;a&gt;&lt;/a&gt; <a href="https://www.google.com/" target="_blank">Link para a página incial do google.</a>
+                <br>
+                </div>
+                </p>
+        </section>
+        <section class="conteudo container">
+            <img class="img-tags" src="./imagens/img_sem_elements.gif" alt="Seções de um documento html." title="Seções de um documento html.">
+            <p class="texto-conteudo">
+                Algumas tags servem como containers que encapsulam varios elementos html dentro dela. Algumas dessas
+                tags são &lt;header&gt;&lt;/header&gt; &lt;nav&gt;&lt;/nav&gt; &lt;section&gt;&lt;/section&gt; 
+                &lt;article&gt;&lt;/article&gt; &lt;aside&gt;&lt;/aside&gt; &lt;footer&gt;&lt;/footer&gt;. Uma dica
+                importante é agrupar elementos dentro da tag correspondente a sua posição dentro da página, seguindo o
+                mapeamento exemplificado na figura. Além disso, um container mais genérico muito utilizado é o 
+                &lt;div&gt;&lt;/div&gt;.
+            </p>
+        </section>
+        <section class="conteudo container final">
+            <img class="img-dom" alt="DOM" title="DOM" src="./imagens/img_htmltree.gif">
+            <p class="texto-conteudo">
+                Quando um browser carrega um documento html, ele cria um DOM da página. DOM
+                é uma abreviação do termo <i>Document Object Model</i>, que é uma representação
+                do documento html em uma estrutura de arvore. Onde cada um dos nós dessa arvore
+                representa uma tag utilizada no documento. É através dessa estrutura que o 
+                javascript consegue manipular um documento html.</p>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="titulo titulo-footer">Lucas Delgado</h3>
+                <a class="mail" target="_blank" href="mailto:lukdelga@gmail.com">lukdelga@gmail.com</a>
+            <ul class="footer-nav">
+                <li><a target="_blank" href="https://github.com/lukdelga">
+                    <img alt="github" title="github" src="./imagens/GitHub-Mark.png">
+                </a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/lucas-delgado-63b149182/">
+                    <img alt="linkedin" title="linkedin" src="./imagens/linkedin-icon.png">
+                </a></li>
+            </ul>
+            </div>
+        </footer>
+</body>

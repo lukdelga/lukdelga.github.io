@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystylesheet.css">
+    <title>CSS3</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html5.html">HTML5</a></li>
+                <li><a href="css3.html">CSS3</a></li>
+            </ul>
+        </nav>
+        <h1 class="titulo titulo-grande">Lucas Delgado</h1>
+    </header>
+        <section class="conteudo container">
+            <img class="imagem-logo" src="./imagens/css-3-logo-png-transparent.png">
+            <h2 class="titulo-conteudo">CSS3</h2>
+            <p class="texto-conteudo">
+                A abreviação CSS significa <i>Cascade Style Sheet</i>, e é a linguagem
+                utilizada para estilizar um documento html. A linguagem CSS descreve como
+                elementos html devem ser exibidos.
+            </p>
+            <p class="texto-conteudo">
+                Existem 3 formas de utilização da linguagem css em um documento html. O primeiro,
+                é inserir o codigo na seção &lt;head&gt; &lt;/head&gt; do documento html. Você deve
+                incluir a tag &lt;style&gt; &lt;/style&gt;, e todo o código css vai dentro dela.<br>
+                ex: <br>
+                <div class="destaque">
+                    <pre>
+
+                    &lt;!DOCTYPE html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;title&gt;...&lt;/title&gt;
+                        &lt;style&gt;
+                        codigo css aqui!
+                        .
+                        .
+                        .
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    </pre>
+                </div>
+                Outra opção, é colocar o css dentro da tag, através do atributo style.<br>
+                ex:<br>
+                <div class="destaque">
+                    <pre>
+
+                    &lt;h1 style="font-weight: normal;"&gt;Título do texto&lt;/h1&gt;
+                    </pre>
+                </div>
+                A maneira mais recomendada é colocar todo o codigo em um arquivo .css separado. Para isso
+                é necessário linkar o arquivo .css com o arquivo .html. Isso é feito pela tag link na cabeça
+                do documento html.<br>
+                ex:<br>
+                documento .html
+                <div class="destaque">
+                    <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;title&gt;...&lt;/title&gt;
+                        &lt;link rel="stylesheet" href="mystylesheet.css"&gt;
+                    &lt;/head&gt;
+                    </pre>
+                </div>
+                documento .css
+                <div class="destaque">
+                    <pre>
+                        seletor1 {
+                            atributo1: valor;
+                            atributo2: valor;
+                            .
+                            .
+                            atributoN: valor;
+                        }
+                        .
+                        .
+                        seletorN {
+                            atributo1: valor;
+                            atributo2: valor;
+                            .
+                            .
+                            atributoN: valor;
+                        }
+                    </pre>
+                </div>
+                Para estilizar os diferentes elementos de um documento html através de um arquivo css,
+                é necessário usar um seletor que defina qual elemento da pagina você deseja estilizar,
+                seguido de {}. Dentro das chaves você deve colocar os atributos que deseja modificar
+                e seus respectivos valores separados por : e usando ; para determinar o fim da declaração
+                (descrito no exemplo anterior). O seletor pode ser definido pela tag do elemento que se deseja
+                modificar. O problema com essa solução é que todos os elementos daquele tipo serão alterados,
+                e muitas vezes precisamos estilizar instancias diferentes de um mesmo elemento de formas diferentes.
+                Pra isso, a linguagem css disponibiliza as classes e os ids, que podem ser atribuídos aos elementos
+                do documento html, através dos atributos class e id respectivamente.<br>
+                ex:<br>
+                documento .html
+                <div class="destaque">
+                    <pre>
+                        .
+                        .
+                        .
+                        &lt;body&gt;
+                            .
+                            .
+                            &lt;h1 class="titulo-maior"&gt;Título do texto&lt;/h1&gt;
+                            &lt;p id="texto-principal"&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vitae! &lt;/p&gt;
+                            .
+                            .
+                        &lt;/body&gt;
+                    </pre>
+                </div>
+                Documento .css
+                <div class="destaque">
+                    <pre>
+                        .titulo-maior {
+                            font-size: 8em;
+                            font-weight: bolder;
+                        }
+
+                        #texto-principal {
+                            text-align: justify;
+                        }
+                    </pre>
+                </div>
+            </p>
+        </section>
+        <section class="conteudo container final">
+            <img class="img-box-model" src="./imagens/box-model.png" alt="Box model" title="Box model">
+            <p class="texto-conteudo">
+                Uma parte muito importante da linguagem CSS é o <i>Box Model</i>. Todos elementos se
+                comportam como uma caixa que tem <i>padding</i> (espaço entre o conteúdo e a borda), border
+                (borda do elemento), margin (o espaço entre a borda de um elemento e seus elementos vizinhos).
+                Cada um dos lados dos atributos da caixa podem ser estilizados individualmente. 
+            </p>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="titulo titulo-footer">Lucas Delgado</h3>
+                <a class="mail" target="_blank" href="mailto:lukdelga@gmail.com">lukdelga@gmail.com</a>
+            <ul class="footer-nav">
+                <li><a target="_blank" href="https://github.com/lukdelga">
+                    <img alt="github" title="github" src="./imagens/GitHub-Mark.png">
+                </a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/lucas-delgado-63b149182/">
+                    <img alt="linkedin" title="linkedin" src="./imagens/linkedin-icon.png">
+                </a></li>
+            </ul>
+            </div>
+        </footer>
+</body>

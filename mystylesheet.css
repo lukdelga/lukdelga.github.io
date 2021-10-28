@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+/* Ajustes da página*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Arvo', sans-serif;
+}
+
+/* cabeçalho + itens */
+
+.main-nav {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+.main-nav ul{
+    margin: 0;
+}
+
+.main-nav li {
+    display: inline;
+    padding: 0 5%;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url(imagens/code-g2044b6b89_1920.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.titulo {
+    color: white;
+    margin: 0;
+    font-weight: normal;
+}
+
+.titulo-grande {
+    font-size: 4em;
+}
+
+/* Corpo da página */
+
+.conteudo {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.conteudo.container {
+    min-height: 120px;
+}
+
+.conteudo.container.final {
+    min-height: 320px;
+}
+
+.titulo-conteudo {
+    text-align: center;
+}
+
+.texto-conteudo {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.portrait{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 2em;
+    float: left;
+}
+
+.imagem-logo {
+    height: 126px;
+    width: 90px;
+    margin: 2em;
+    float: left;
+}
+
+.img-dom {
+    height: 180px;
+    width: 324px;
+    margin: 2em;
+    float: left;
+}
+
+.img-exemplo {
+    height: 100px;
+    width: 130px;
+    margin: .5em;
+}
+
+.img-tags {
+    float: right;
+    margin: 2em;
+}
+
+.img-box-model {
+    width: 260px;
+    height: 200px;
+    float: right;
+    margin: 2em;
+}
+
+.destaque {
+    background-color: rgb(196, 194, 194);
+    margin: .25em 0;
+}
+
+/* Rodapé */
+
+.main-footer {
+    background-color: rgb(114, 211, 4);
+    color: white;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav {
+    border-bottom: none;
+    margin: 0.5em 0.5em;
+
+}
+
+.footer-nav img {
+    height: 50px;
+    width: 50px;
+    padding: .25em;
+    margin: .25em;
+}
+
+.footer-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 5%;
+}
+
+.footer-nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-nav a:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.titulo-footer {
+    float: left;
+    margin: 1em;
+}
+
+.mail{
+    text-decoration: none;
+    font-weight: lighter;
+    color: white;
+}
